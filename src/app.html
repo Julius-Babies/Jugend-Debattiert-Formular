@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<link rel="icon" href="%sveltekit.assets%/favicon.ico" />
+		<link rel="icon" type="image/x-icon" href="%sveltekit.assets%/favicon.ico">
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		%sveltekit.head%
+		<style>
+			@font-face {
+				font-family: Helvetica;
+				src: url('static/font.otf');
+			}
+
+			body {
+				font-family: Helvetica, sans-serif;
+				display: flex;
+				flex-direction: column;
+				height: calc(100vh - 32px);
+				margin: 0;
+				padding: 16px;
+			}
+		</style>
+	</head>
+	<body data-sveltekit-preload-data="hover">
+		<div style="display: contents">%sveltekit.body%</div>
+	</body>
+</html>
