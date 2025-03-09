@@ -1,11 +1,7 @@
 FROM node:18-alpine as build
 WORKDIR /app
-COPY package.json package.json
-COPY package-lock.json package-lock.json
-
-RUN yarn install
 COPY . .
-
+RUN yarn install
 RUN yarn run build
 
 
